@@ -13,7 +13,7 @@
  general 
 */
 
-.clearfix {
+.clearfix::after {
     display: table;
     content: "";
     clear: both;
@@ -25,17 +25,18 @@
     
 }
 
-.containers-img > *{
+.containers-img > section{
     float: left;
-    width: calc( 100% /3 );
-    margin:  20px 0px;  
+    width: calc( (960px / 3) );
+    margin-top:  20px;
+    margin-bottom: 20px;  
     
 }
 
 .section {
     background-color: black;
     color: white;
-    width: calc(960px / 3);
+    /* width: calc((100% / 3) ); */
     height: 100px;
     display: inline-block;
    
